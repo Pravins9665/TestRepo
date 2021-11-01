@@ -1,0 +1,32 @@
+interface A {
+
+	void display();
+}
+
+interface B {
+
+	void print();
+}
+
+class C implements A, B {
+
+	public void display() {
+		System.out.println("display method of class A");
+	}
+
+	public void print() {
+		System.out.println("Print method of class B");
+	}
+
+}
+
+public class multiple_inheritance {
+
+	public static void main(String[] args) {
+
+		C c1 = new C();
+		c1.display();
+		c1.print();
+	}
+
+}
